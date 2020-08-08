@@ -1,0 +1,935 @@
+/*============================
+Common Css Start
+=============================*/
+body{
+    color:666666;
+    font-size:16px;
+    font-family: Georgia;
+    line-height:1.5em;
+    margin:0;
+}
+.container{ 
+    
+   margin:0 auto;
+   max-width:960px;
+   width:100%;
+}
+img{
+   max-width:100%;
+   height:auto;
+}    
+.alignLeft{
+    float:left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+   
+}
+    
+
+
+/*===============================
+Common Css End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Top Header Area Start
+================================*/
+
+.header_area{
+    width:100%;
+    clear:both;
+}
+
+#top_header_area{
+    background: #ba2e1f;
+    padding:15px 0px
+}
+
+.inner_top_header{
+    overflow:hidden;
+} 
+
+.mini_menu{
+   padding-top: 5px;
+    float:left;
+    width:70%;
+} 
+.mini_menu ul{
+    margin:0;
+    padding:0;
+    text-align:left;
+    list-style: none;
+}
+.mini_menu ul li{
+    display:inline-block;
+    margin-right: 20px;
+    position:relative;
+}
+
+.mini_menu ul li::after{
+    position:absolute;
+    background:#fff;
+    width:1px;
+    height:12px;
+    right:-5px;
+    content:"";
+    top:6px;
+}
+
+
+
+.mini_menu ul li a{
+    color: #ffffff;
+    display:block;
+    font-size:14px;
+    text-decoration:none;
+} 
+
+.mini_menu ul li:last-child::after{
+    display:none;
+}
+.mini_menu ul li a:hover{
+    color:#000;
+}
+.search_area{
+    width:30%;
+    float:right;
+}
+
+.search_area form{
+    background:#ddd;
+    float:right;
+    max-width:210px;
+    border-radius:25px;
+    width:96%;
+    padding:2%;
+}
+.search_area input{
+    border:0px solid;
+    width:75%;
+    padding:1%;
+    color:#000;
+    float:left;
+    cursor:pointer;
+}
+.search_area input[type="submit"]{
+    width:23%;
+    background:url(img/searchicon.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+/*===============================
+Top Header Area End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Main Header Area Start
+================================*/
+#main_header_area{
+    width:100%;
+    clear: both;
+
+    overflow:hidden;
+    padding:20px 0px;
+}
+
+
+.logo_area{
+    float:left;
+    width:240px;
+    padding-top:30px;
+}
+
+.social_area{
+    float:right;
+  max-width:600px;
+    width:100%;
+    padding-top:30px;
+}
+.social_area ul{
+    margin:0;
+    padding:0;
+    text-align:right;
+    
+}
+.social_area ul li{
+    list-style:none;
+    display:inline-block;
+    margin-left:12px;
+}
+.social_area ul li a{
+    
+    
+}
+.social_area ul li a i{
+    background:#333333; 
+    cursor:pointer;
+    color:#fff;
+    width:35px;
+    height:25px;
+    border-radius: 50%;
+    text-align:center;
+    padding-top:8px;
+    transition:all 0.5s;
+}
+.social_area  ul li a i:hover {
+    background:#ba2e1f;
+}
+.social_area ul li a:hover i.fa-linkedin-in{
+    background:#0678B6;
+}
+
+
+.social_area ul li a:hover i.fa-twitter{
+    background:#4EBAE4;
+} 
+
+.social_area ul li a:hover: i.fa-pinterest{
+    background: #E83F3A;
+}
+
+.social_area ul li a:hover i.google-plus-g{
+    background:#E83F3A;
+}
+.social_area ul li a:hover i.fa-rss{
+    background:#ee802f;
+    
+}
+
+
+
+/*===============================
+Main Header Area End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Main Menu Start
+================================*/
+
+
+#main_menu{
+    width:100%;
+    clear:both;
+    margin-top:20px;
+}
+.inner_menu{
+    background:url(img/menuBar.png);
+    
+    min-height: 30px;
+    padding:15px 0px;
+    border-radius:5px;
+    
+    
+}
+#main_menu ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    text-align: center;
+    
+}
+#main_menu ul li{
+    display:inline-block;
+    margin:0 5px;
+    position: relative;
+}
+#main_menu ul li a{
+    color:#fff;
+    text-decoration:none;
+    
+}
+#main_menu ul li a:hover{
+    color:#ba2e1f;
+}
+
+
+#main_menu ul li:hover a{
+     color:#ba2e1f;
+}
+#main_menu ul li:hover ul li a{
+   color:#fff;
+}
+
+/*===============================
+Main Menu End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Dropdown Menu Style Start
+================================*/
+
+
+#main_menu ul ul{
+    position: absolute;
+    width:180px;
+    background:#ba2e1f;
+    left:-9999999999px;
+    top:28px;
+    z-index: 1;
+}
+#main_menu ul li:hover ul{
+    left:0;
+    display: block;
+}
+#main_menu ul li:hover ul ul{
+    left:-999999999px;
+} 
+#main_menu ul ul ul{
+    left:-999999999px;
+    top:0px;
+}
+
+
+#main_menu ul li ul li:hover ul{
+    left:180px;
+}
+#main_menu ul ul li{
+    display:block;
+    margin:0;
+}
+#main_menu ul ul li a:hover{
+    background:#333333;
+    color:#fff;
+    display:block;
+}
+
+#main_menu ul ul li:hover a{
+    background:#333333;
+    color:#fff;
+    display: block;
+}
+
+
+#main_menu ul ul li:hover ul li a{
+    background:none;
+    color:#fff;
+    display: block;
+}
+#main_menu ul ul li ul li a:hover{
+    background:#333333;
+    color:#fff;
+    display: block;
+}
+
+
+
+
+
+
+
+
+/*============================
+Dropdown Menu Style End
+===========================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Slider Start
+================================*/
+
+#slider_area{
+    margin-top:20px;
+    
+}
+.item{
+    position:relative;
+}
+
+.slider_caption{
+    position:absolute;
+    width:100%;
+    top:50%;
+    left:50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+
+}
+
+.slider_caption h1{
+    color:#fff;
+    font-size:35px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Slider End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Hero Are Start
+================================*/
+#hero_area{
+    background:#fff;
+    margin:0;
+    padding:0;
+    
+}
+
+.inner_hero{
+    overflow: hidden;
+}
+
+.inner_hero h2{
+    color:#000;
+    font-size:86px;
+    line-height:1em;
+    font-weight: normal;
+    margin-bottom:15px;
+}
+
+.inner_hero p{
+    color:#666666;
+    font-size:16px;
+    
+    
+}
+
+
+.inner_hero a{
+    color:#ba2e1f;
+    font-size:16px;
+    float: right;
+    text-decoration: none;
+       
+}
+
+.inner_hero a:hover{
+    color:#000;
+}
+/*===============================
+Hero Area End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Work Area Start
+================================*/
+
+
+#work_area{
+    background:#f2f2f2;
+    padding:45px;
+}
+
+.inner_work{
+    overflow: hidden;
+    
+}
+
+.child_work{
+    width:32%;
+    float: left;
+    margin:0 1% 10px;
+}
+
+.child_work h2{
+    color:#333333;
+    font-size:26px;
+    font-weight:normal;
+}
+.child_work p{
+    color:#878787;
+    font-size:14px;
+    font-weight:normal;
+}
+.child_work a{
+    color:#b92d1f;
+    font-size:14px;
+    font-weight:normal;
+    text-decoration: none;
+    float:right;
+    clear: both;
+    display: inline-block;
+}
+.child_work a:hover{
+    color:#000;
+}
+.about_area{
+    margin-left:0px;
+    
+}
+.about_area img{
+   border:1px solid #dfdfdf;
+    padding:5px;
+    margin-bottom: 15px;
+    display: block;
+    
+    
+}
+.section_area{
+    
+}
+.child_service{
+    width:100%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.child_service .service_img{
+    width:25%;
+    float:left;
+}
+.child_service .text_service{
+    width:75%;
+    float:right;
+}
+.child_service .text_service h3{
+    color:#878787;
+    font-size:15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.child_service .text_service p{
+   margin-top:0px;
+   line-height: 1.4em;
+}
+
+.testimonial_area{
+    margin-right:0px;
+    
+}
+
+.child_testimonial{
+    width:100%;
+    margin-bottom: 15px;
+    overflow: hidden;
+
+}
+.child_head{
+    width: 100%;
+    overflow:hidden;
+    margin-bottom:0px;
+}
+.child_head .img_child{
+    width:25%;
+    float:left;
+   
+}
+.child_head .head{
+    width:75%;
+    float:right;
+    margin-bottom: 0px;
+    
+}
+.child_head h3{
+    color:#989898;
+    font-size:16px;
+    font-weight: bold;
+    margin:0;
+    
+}
+.child_head .head span{
+    font-weight:normal;
+}
+
+
+.text_child p{
+    margin-top: 0px;
+    line-height: 1.4em;
+    
+}
+
+/*===============================
+Work Area End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Footer Area Start
+================================*/
+#footer_area{
+    width:100%;
+    background:#fff;
+    padding: 45px 0px ;
+}
+.inner_footer{
+overflow:hidden;    
+}
+
+.child_footer{
+    padding:1% ;
+    margin:0 1% 10px;
+    
+    width:21%;
+    float:left;
+}
+.child_footer h3{
+    border-top:1px solid #666666;
+    color:#666666;
+    font-size:16px;
+    margin-top:0px;
+    padding-top:5px;
+}
+.child_footer .hd{
+  margin-bottom:10px 
+}
+
+.child_footer p{
+    color:#666666;
+    font-size:14px;
+    margin-top:0px;
+
+}
+.child_footer p a{
+    color:#b92d1f;
+    text-decoration:none;
+}
+.child_footer p a:hover{
+    color:#000;
+}
+.child_footer ul{
+    margin:0px;
+    padding:0px;
+    list-style: none;
+}
+.child_footer ul ul{
+    display:none;
+   
+}
+.child_footer li{
+    background:url(img/next.png) no-repeat center left;
+    padding-left:18px;
+    display:block;
+    border-bottom:1px solid #666666;
+      
+}
+.child_footer li:last-child{
+    border-bottom:0px solid;
+}
+
+.child_footer li a{
+    color:#666666;
+    font-size:14px;
+    text-decoration:none;
+    line-height:30px;
+}
+
+.child_footer h4{
+    color:#666666;
+    font-size:14px;
+    margin-top:-5px;
+    margin-bottom:0px;
+}
+.child_footer h4 a{
+    color:#666666;
+    text-decoration:none;
+    
+    
+}
+.child_footer h4 a:hover{
+    color:#b82c1f;
+}
+.child_footer h6{
+    margin:0 0 10px;
+    color:#666666;
+    font-size:12px;
+    font-weight:normal;
+    line-height:1.3em;
+    
+    
+}
+.child_footer h6 a{
+    color:#b82c1f;
+    text-decoration:none;
+
+}
+.child_footer h6 a:hover{
+    color:#000;
+}
+
+
+.child_footer .child_blog p{
+    color:#666666;
+    font-size:14px;
+    line-height:1.3em;
+}
+.child_blog{
+    width:100%;
+    margin-bottom:12px;
+ overflow:hidden;   
+}
+.child_footer .child_blog .Read_More_Link{
+    color:#b82c1f;
+    font-size:12px;
+    text-decoration:none;
+    float:right;
+}
+.child_footer .child_blog .Read_More_Link:hover{
+    color:#000;
+}
+
+.child_footer input{
+    width:90%;
+    background:#f2f2f2;
+    border:0px solid;
+    border-radius:10px;
+    padding:10px 5%;
+    margin-bottom:10px;
+    
+}
+.child_footer textarea{
+    width:90%;
+    background:#f2f2f2;
+    border:0px solid;
+    border-radius:10px ;
+    padding:10px 5%;
+    margin-bottom:10px;
+    height:60px;
+    
+}
+.child_footer input[type="submit"]{
+    width:80px;
+    background:#f2f2f2;
+    color:#b82c1f;
+    cursor:pointer;
+    transition:all 0.5s;
+
+}
+.child_footer input[type="submit"]:hover{
+   background:#b82c1f;
+    color:#fff;
+
+}
+
+/*===============================
+Footer Area End
+================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================
+Copyright Area Start
+================================*/
+
+#copyright_area{
+    width:100%;
+    background:#f2f2f2;
+    padding:20px 0;
+}
+.inner_copyright{
+    overflow: hidden;
+}
+.inner_copyright p{
+    margin:0;
+    color:#919191;
+    font-size:13px;
+}
+
+.left_copyright{
+    width: 35%;
+    float:left;
+}
+.right_copyright{
+    width:65%;
+    float:right;
+    text-align:right;
+    
+}
+
+/*===============================
+Copyright Area End
+================================*/
